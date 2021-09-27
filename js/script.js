@@ -95,3 +95,48 @@ const isCheckeddd = true,
       isCloseee = true;
 
 console.log(isCheckeddd || !isCloseee);
+
+/**
+ * Условия
+ */
+
+if (4==9) {
+    console.log("ok");
+} else {
+    console.log("Not ok");
+}
+
+// пример вложенного условия
+
+const num = 50;
+
+if (num < 49 ) {
+    console.log("Error");
+} else if (num > 100){
+    console.log("Error");
+} else {
+    console.log("Норм");
+}
+
+// тернарный оператор
+
+(num === 50) ? console.log("Норм") : console.log("Error");
+
+// более удобная конструкция if else - switch, всегда строгое сравнение
+
+const numm = 50;
+
+switch (numm) { 
+    case 49:
+        console.log("no");
+        break;
+    case 100:
+        console.log("no");
+        break;
+    case 53:
+        console.log("yes");
+        break;
+    default:
+        console.log("no no");
+        break;
+}
