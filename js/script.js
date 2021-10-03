@@ -140,3 +140,33 @@ switch (numm) {
         console.log("no no");
         break;
 }
+
+/**
+ * Циклы
+ */
+
+let n = 50;
+
+// while(n <= 55){
+//     console.log(n);
+//     n++;
+// }
+
+//Проверка условий и при необходимости выход из цикла
+
+do{
+    console.log(n);
+    n++;
+}
+while(n<55);
+
+// дефолтный for + условия для остановки/пропуска нужных значений
+
+for (let i = 1; i<8; i++){
+    if (i === 6){
+        // break;
+        continue;
+    }
+    console.log(i);
+
+}
