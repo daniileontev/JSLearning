@@ -9,7 +9,6 @@ const arr = [1, 13, 3, 2, 8];
 arr.sort((a, b) => a - b); //1-8
 console.log(arr);
 
-
 arr.sort(compareNum);
 console.log(arr);
 
@@ -33,7 +32,6 @@ arr.push(10);
 for(let i = 0; i <arr.length; i++){
     console.log(arr[i]);
 }
-
 
 // привод строки, в массив. Например от пользователя получаем информацию в виде строки(список продуктов), и преобразуем его в массив 
 const str = prompt("", "");
