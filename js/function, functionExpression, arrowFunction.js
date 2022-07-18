@@ -53,3 +53,45 @@ const clc3 = (a, b) =>{
     console.log('1');
     return a + b;
 };
+
+// пример работы аргументов функций
+const usdCurr = 28;
+const eurCurr = 42;
+
+function convert (amount, curr){
+    console.log(curr * amount);
+}
+
+convert(300, usdCurr);
+convert(300, eurCurr);
+
+// return - возвращает какой либо результат, для его дальнейшего использования, если необходимо
+
+const rubCurr = 34;
+const discount = 0.7;
+
+function convert (amount, curr){
+    return curr * amount;
+}
+
+function promotion (result){
+    console.log(result * discount);
+}
+
+// тут передаетя результат функции convert
+promotion(convert(300, rubCurr));
+
+
+// еще один полезный пример для работы с return, в данном случае функция останавливается сразу, как только соблюдается условие
+
+function test (){
+    for (let i = 0; i < 5; i++ ){
+        console.log(i);
+        if (i === 3) {
+            return;
+        }   
+    }
+    console.log("done");
+}
+
+test();

@@ -18,7 +18,7 @@ console.log(fruit.indexOf("fruit"));
 const logg = "Hello world";
 
 //6- начало строки 11-конец строки
-console.log(logg.slice(6, 11)); 
+console.log(logg.slice(4, 11)); 
 console.log(logg.substring(6,11));
 // какое кол-во символов нужно вырезать начиная с 6 и заканчивая 5
 console.log(logg.substr(6,5));
