@@ -6,20 +6,26 @@
 
 
 function fib(n) {
+    if (typeof(n) !== 'number' || n <= 0 || !Number.isInteger(n)) {
+        return "";
+    }
 
     let f0 = 0;
     let f1 = 1;
-    let fn;
+    let fn = '';
 
-    console.log(f0 + ' ' + f1 + ' ');
-
-    for(let i = 3; i<n; i++){
-        fn = f0 + f1;
+    for(let i = 0; i < n; i++){
+        if(i + 1 === n){
+            fn += f0;
+        } else {
+            fn += f0 + ' ';
+        } 
+        let fnn = f0 + f1
         f0 = f1;
-        f1 = fn
+        f1 = fnn
 
     }
 
-    
+    return fn
 }
-console.log(fib(3));
+console.log(fib(5)); 
