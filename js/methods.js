@@ -33,6 +33,12 @@ const test = "12.2px";
 console.log(parseInt(test)); // переводит число в другую систему исчесления
 console.log(parseFloat(test));
 
+//метод .trim()
 
+var orig = '   foo  ';
+console.log(orig.trim()); // 'foo'
 
+// Другой пример, в котором .trim() убирает пробельные символы только с одной стороны.
 
+var orig = 'foo    ';
+console.log(orig.trim()); // 'foo'

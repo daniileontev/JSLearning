@@ -106,6 +106,8 @@ log(...num);
 const array = ["a", "b"];
 const copyArray = [...array];
 
+console.log(copyArray);
+
 const q = {
     one: 1,
     two: 2
